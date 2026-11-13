@@ -1,0 +1,61 @@
+id,text,difficulty,true_label,predicted_label,confidence,abstained,correct,ms
+21,"I'll never pass this course, I'm just not a math person.",implicit,frustrated,frustrated,0.912,False,True,260.3
+22,"Fantastic, another question I can't do.",sarcasm,frustrated,confused,0.407,True,False,147.2
+23,Again?!,short,frustrated,frustrated,0.473,False,True,145.7
+24,I swear this exercise hates me.,plain,frustrated,frustrated,0.884,False,True,435.0
+25,I've rewritten this paragraph in Dutch three times and it's still wrong.,plain,frustrated,confused,0.951,False,False,146.4
+26,"Great, the answer key says 2 and I got 47. Love that for me.",sarcasm,frustrated,confident,0.558,False,False,149.3
+27,This question is ridiculous.,plain,frustrated,frustrated,0.862,False,True,146.0
+28,Why does it keep saying my conjugation is wrong when it looks right?,plain,frustrated,confused,0.947,False,False,145.8
+29,I'm getting nowhere with this and I've wasted my whole evening.,plain,frustrated,frustrated,0.847,False,True,145.9
+30,ok forget it,short,frustrated,other,0.999,False,False,144.5
+51,Huh?,short,confused,other,0.936,False,False,144.2
+52,So... is it the same as last time or different?,plain,confused,neutral,0.552,False,False,146.6
+53,I think I get it but I'm not sure why the minus sign changes.,mixed,confused,confused,0.985,False,True,147.5
+54,Why het meisje if a girl is female?,plain,confused,confused,0.514,False,True,147.5
+55,"Wait what, where did the 2 come from?",plain,confused,confused,0.817,False,True,146.0
+56,Okay I understood up until the substitution part.,implicit,confused,confident,0.987,False,False,145.4
+57,I keep reading the explanation but it just doesn't click.,mixed,confused,confused,1.0,False,True,145.9
+58,Is dat or wat correct in this sentence?,plain,confused,neutral,0.498,False,False,146.0
+59,So the answer is infinity? Or undefined?,plain,confused,confused,0.869,False,True,149.9
+60,not sure what you mean,short,confused,confused,0.977,False,True,149.2
+81,"whatever, next",short,bored,bored,0.646,False,True,146.8
+82,"Oh wonderful, more vocabulary drills. Truly thrilling.",sarcasm,bored,bored,0.989,False,True,148.0
+83,Can I just get the answers so I can be done with this?,implicit,bored,neutral,0.864,False,False,148.0
+84,Do we have to go through every single example?,plain,bored,bored,0.366,True,True,147.5
+85,This is easy but so tedious.,plain,bored,bored,0.996,False,True,145.7
+86,"I already did 20 of these, do I really need 20 more?",plain,bored,bored,0.788,False,True,151.8
+87,Not really feeling this today.,implicit,bored,bored,0.715,False,True,148.6
+88,ok...,short,bored,other,0.998,False,False,151.2
+89,This is the most pointless topic in the whole course.,plain,bored,bored,0.997,False,True,155.6
+90,"Why do we need to learn the Dutch numbers above a hundred, nobody uses them.",plain,bored,confused,0.602,False,False,157.1
+111,Done. Next?,short,confident,confident,0.999,False,True,153.4
+112,"Wait, I actually got it right?!",mixed,confident,confident,0.997,False,True,153.8
+113,Finally! After three tries I got it.,mixed,confident,confident,0.992,False,True,155.2
+114,"Not bad, 9 out of 10.",plain,confident,confident,0.983,False,True,154.5
+115,I used to hate derivatives but now they're fine.,mixed,confident,confident,0.518,False,True,154.5
+116,Okay that was easier than I expected.,plain,confident,confident,0.916,False,True,155.2
+117,"Pretty sure it's het huis, right?",implicit,confident,confused,0.439,False,False,155.0
+118,I think I'm starting to like calculus.,plain,confident,confident,0.789,False,True,154.1
+119,Nailed it.,short,confident,confident,0.992,False,True,156.0
+120,"I didn't think I could do it, but I did.",mixed,confident,confident,0.966,False,True,155.5
+141,ok,short,neutral,other,0.999,False,False,154.3
+142,How do you pronounce ui?,plain,neutral,confused,0.624,False,False,154.6
+143,Next question please.,plain,neutral,confident,0.999,False,False,153.5
+144,What is the integral of 1/x?,plain,neutral,neutral,0.937,False,True,155.5
+145,Can you explain the past tense?,plain,neutral,confused,0.999,False,False,153.2
+146,I'll do the rest later.,plain,neutral,other,0.74,False,False,153.0
+147,What chapter is this from?,plain,neutral,neutral,0.675,False,True,153.6
+148,My answer is x = 4.,plain,neutral,confident,0.866,False,False,154.8
+149,Let's practise numbers in Dutch.,plain,neutral,other,0.953,False,False,153.4
+150,Thanks.,short,neutral,other,0.996,False,False,153.8
+171,I don't see the point of anything anymore.,implicit,distressed,bored,0.994,False,False,155.6
+172,"lol I'm totally fine, just haven't slept in 3 days.",sarcasm,distressed,other,0.511,False,False,156.4
+173,"I'm shaking, the exam is in an hour.",plain,distressed,distressed,1.0,False,True,152.4
+174,Everything is falling apart and this course is just the last straw.,plain,distressed,distressed,0.924,False,True,154.7
+175,I can't do this anymore.,implicit,distressed,frustrated,0.815,False,False,152.6
+176,My whole future depends on passing this course and I'm freaking out.,plain,distressed,distressed,1.0,False,True,153.9
+177,"I've been feeling really down for weeks, not just about school.",plain,distressed,distressed,1.0,False,True,155.1
+178,"I feel numb, I just stare at the screen for hours.",implicit,distressed,bored,0.91,False,False,156.0
+179,I'm so anxious I threw up before class.,plain,distressed,distressed,1.0,False,True,155.3
+180,Nobody would even notice if I just disappeared from this course.,implicit,distressed,bored,0.827,False,False,154.3

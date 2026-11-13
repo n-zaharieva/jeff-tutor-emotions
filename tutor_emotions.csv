@@ -1,0 +1,181 @@
+id,text,label,split,difficulty
+1,"I've done this exercise five times and keep getting a different answer every time.",frustrated,train,plain
+2,"Why does the chain rule never work when I use it?",frustrated,train,plain
+3,"Ugh, I hate Dutch word order, it makes no sense.",frustrated,train,plain
+4,"I studied all weekend and still failed the quiz.",frustrated,train,plain
+5,"This is impossible, nobody could solve this.",frustrated,train,plain
+6,"I keep mixing up de and het and it's driving me crazy.",frustrated,train,plain
+7,"I'm so stupid, I can't even do basic derivatives.",frustrated,train,plain
+8,"Seriously, how many times do I have to redo this integral?",frustrated,train,plain
+9,"Every time I think I get it, the next question proves I don't.",frustrated,train,plain
+10,"I give up on this limit question.",frustrated,train,plain
+11,"Why is my answer wrong?? I followed every step!",frustrated,train,plain
+12,"The textbook explains this so badly, I'm getting nowhere.",frustrated,train,plain
+13,"I've been stuck on this one sentence for 40 minutes.",frustrated,train,plain
+14,"This makes me want to throw my laptop.",frustrated,train,plain
+15,"Wow, wrong again. Of course.",frustrated,train,sarcasm
+16,"I did exactly what you said and it still doesn't work.",frustrated,train,plain
+17,"Dutch pronunciation is a nightmare, I sound ridiculous every time.",frustrated,train,plain
+18,"I'm sick of losing points on tiny sign mistakes.",frustrated,train,plain
+19,"How is everyone else getting this except me?",frustrated,train,plain
+20,"Can you stop giving hints and just tell me why I keep failing?",frustrated,train,plain
+21,"I'll never pass this course, I'm just not a math person.",frustrated,test,implicit
+22,"Fantastic, another question I can't do.",frustrated,test,sarcasm
+23,"Again?!",frustrated,test,short
+24,"I swear this exercise hates me.",frustrated,test,plain
+25,"I've rewritten this paragraph in Dutch three times and it's still wrong.",frustrated,test,plain
+26,"Great, the answer key says 2 and I got 47. Love that for me.",frustrated,test,sarcasm
+27,"This question is ridiculous.",frustrated,test,plain
+28,"Why does it keep saying my conjugation is wrong when it looks right?",frustrated,test,plain
+29,"I'm getting nowhere with this and I've wasted my whole evening.",frustrated,test,plain
+30,"ok forget it",frustrated,test,short
+31,"I don't understand what the question is asking.",confused,train,plain
+32,"What's the difference between a derivative and an integral?",confused,train,plain
+33,"Wait, why did the x disappear in that step?",confused,train,plain
+34,"When do I use om te in Dutch?",confused,train,plain
+35,"I'm lost, can you explain that again?",confused,train,plain
+36,"Is the limit zero or does it not exist?",confused,train,plain
+37,"I don't get why the verb goes to the end of the sentence here.",confused,train,plain
+38,"Which rule should I use here, product rule or chain rule?",confused,train,plain
+39,"What does dx actually mean?",confused,train,plain
+40,"Sorry, I didn't follow your last explanation.",confused,train,plain
+41,"How do you know when to use er?",confused,train,plain
+42,"Why is the derivative of a constant zero?",confused,train,plain
+43,"I'm not sure where to even start with this problem.",confused,train,plain
+44,"Is hebben or zijn correct for this verb in the past tense?",confused,train,plain
+45,"Hmm, so is the function increasing or decreasing here?",confused,train,plain
+46,"I thought you said the opposite earlier?",confused,train,plain
+47,"Can you show me an example? The rule alone doesn't make sense to me.",confused,train,plain
+48,"What's the difference between kennen and weten?",confused,train,plain
+49,"I can't see how you got from line 2 to line 3.",confused,train,plain
+50,"Does this mean the graph has a maximum or a minimum?",confused,train,plain
+51,"Huh?",confused,test,short
+52,"So... is it the same as last time or different?",confused,test,plain
+53,"I think I get it but I'm not sure why the minus sign changes.",confused,test,mixed
+54,"Why het meisje if a girl is female?",confused,test,plain
+55,"Wait what, where did the 2 come from?",confused,test,plain
+56,"Okay I understood up until the substitution part.",confused,test,implicit
+57,"I keep reading the explanation but it just doesn't click.",confused,test,mixed
+58,"Is dat or wat correct in this sentence?",confused,test,plain
+59,"So the answer is infinity? Or undefined?",confused,test,plain
+60,"not sure what you mean",confused,test,short
+61,"This is so boring.",bored,train,plain
+62,"Can we do something else? I've done like 30 of these already.",bored,train,plain
+63,"meh",bored,train,short
+64,"These exercises are all the same.",bored,train,plain
+65,"Do I really need to know this?",bored,train,plain
+66,"I'm falling asleep doing these vocabulary lists.",bored,train,plain
+67,"Can we skip ahead? This part is too easy.",bored,train,plain
+68,"When will I ever use integrals in real life?",bored,train,plain
+69,"Same thing again...",bored,train,short
+70,"How many more of these are there?",bored,train,plain
+71,"I already know this, it's just repetitive.",bored,train,plain
+72,"Honestly I'm just clicking through at this point.",bored,train,plain
+73,"Can we make this a bit more interesting?",bored,train,plain
+74,"zzz",bored,train,short
+75,"Is there a faster way to get through this?",bored,train,plain
+76,"I've lost interest in this chapter.",bored,train,plain
+77,"Another list of irregular verbs, yay.",bored,train,sarcasm
+78,"I'd rather be doing anything else right now.",bored,train,plain
+79,"I'm only doing this because it's mandatory.",bored,train,plain
+80,"This lesson is dragging on forever.",bored,train,plain
+81,"whatever, next",bored,test,short
+82,"Oh wonderful, more vocabulary drills. Truly thrilling.",bored,test,sarcasm
+83,"Can I just get the answers so I can be done with this?",bored,test,implicit
+84,"Do we have to go through every single example?",bored,test,plain
+85,"This is easy but so tedious.",bored,test,plain
+86,"I already did 20 of these, do I really need 20 more?",bored,test,plain
+87,"Not really feeling this today.",bored,test,implicit
+88,"ok...",bored,test,short
+89,"This is the most pointless topic in the whole course.",bored,test,plain
+90,"Why do we need to learn the Dutch numbers above a hundred, nobody uses them.",bored,test,plain
+91,"I got it right! The answer is 3x squared.",confident,train,plain
+92,"Oh, now I understand the chain rule.",confident,train,plain
+93,"That makes total sense now, thanks!",confident,train,plain
+94,"I finally passed my Dutch speaking practice!",confident,train,plain
+95,"Can I try a harder one?",confident,train,plain
+96,"I think I've got the hang of this.",confident,train,plain
+97,"Easy, the limit is 1.",confident,train,plain
+98,"I solved it without any hints this time.",confident,train,plain
+99,"Ik woon in Tilburg. I'm pretty sure that sentence is correct.",confident,train,plain
+100,"Yes! Got all five right.",confident,train,plain
+101,"Ah I see, you just substitute u = x squared.",confident,train,plain
+102,"I'm ready for the test now.",confident,train,plain
+103,"That trick really helped, I'm much faster now.",confident,train,plain
+104,"Got it, the verb goes to the end in subordinate clauses.",confident,train,plain
+105,"Let me do the next one on my own.",confident,train,plain
+106,"I understood the explanation, moving on.",confident,train,plain
+107,"This is actually fun once you get it.",confident,train,plain
+108,"I checked it twice, I'm sure it's correct.",confident,train,plain
+109,"Thank you, that was really clear!",confident,train,plain
+110,"I can explain this to my friends now.",confident,train,plain
+111,"Done. Next?",confident,test,short
+112,"Wait, I actually got it right?!",confident,test,mixed
+113,"Finally! After three tries I got it.",confident,test,mixed
+114,"Not bad, 9 out of 10.",confident,test,plain
+115,"I used to hate derivatives but now they're fine.",confident,test,mixed
+116,"Okay that was easier than I expected.",confident,test,plain
+117,"Pretty sure it's het huis, right?",confident,test,implicit
+118,"I think I'm starting to like calculus.",confident,test,plain
+119,"Nailed it.",confident,test,short
+120,"I didn't think I could do it, but I did.",confident,test,mixed
+121,"What's the next exercise?",neutral,train,plain
+122,"Can you give me the homework for chapter 4?",neutral,train,plain
+123,"How do you say library in Dutch?",neutral,train,plain
+124,"What is the derivative of sin(x)?",neutral,train,plain
+125,"I'll continue tomorrow.",neutral,train,plain
+126,"Here is my answer: 12.",neutral,train,plain
+127,"Can you check my sentence: Ik ga morgen naar school.",neutral,train,plain
+128,"What time is the exam?",neutral,train,plain
+129,"Let's start with integrals.",neutral,train,plain
+130,"Is there a formula sheet I can use?",neutral,train,plain
+131,"How many points is this question worth?",neutral,train,plain
+132,"Please give me five practice questions.",neutral,train,plain
+133,"What's the plural of boek?",neutral,train,plain
+134,"I'm on question 7.",neutral,train,plain
+135,"Can you translate this paragraph?",neutral,train,plain
+136,"Okay.",neutral,train,short
+137,"What does gezellig mean?",neutral,train,plain
+138,"Show me the solution steps for question 3.",neutral,train,plain
+139,"I'm going to try the next one.",neutral,train,plain
+140,"Can we review chapter 2?",neutral,train,plain
+141,"ok",neutral,test,short
+142,"How do you pronounce ui?",neutral,test,plain
+143,"Next question please.",neutral,test,plain
+144,"What is the integral of 1/x?",neutral,test,plain
+145,"Can you explain the past tense?",neutral,test,plain
+146,"I'll do the rest later.",neutral,test,plain
+147,"What chapter is this from?",neutral,test,plain
+148,"My answer is x = 4.",neutral,test,plain
+149,"Let's practise numbers in Dutch.",neutral,test,plain
+150,"Thanks.",neutral,test,short
+151,"I'm panicking, the exam is tomorrow and I don't know anything.",distressed,train,plain
+152,"I can't sleep because of this course, I'm so anxious.",distressed,train,plain
+153,"If I fail this exam I lose my scholarship and I don't know what I'll do.",distressed,train,plain
+154,"I've been crying all evening over this assignment.",distressed,train,plain
+155,"My parents will be so disappointed, I feel sick.",distressed,train,plain
+156,"I feel completely overwhelmed, I have three deadlines this week.",distressed,train,plain
+157,"I can't focus on anything, everything feels too much right now.",distressed,train,plain
+158,"I'm so stressed I can barely breathe.",distressed,train,plain
+159,"I feel like I'm failing at everything, not just math.",distressed,train,plain
+160,"I haven't eaten properly in days because of exams.",distressed,train,plain
+161,"Honestly I don't know if I can keep going with my studies.",distressed,train,plain
+162,"I feel so alone, nobody in my class talks to me.",distressed,train,plain
+163,"Every time I open this course my heart starts racing.",distressed,train,plain
+164,"I'm scared I'll have to drop out.",distressed,train,plain
+165,"I keep having panic attacks before the Dutch speaking test.",distressed,train,plain
+166,"Something happened at home and I can't think about school.",distressed,train,plain
+167,"I feel like a failure and I don't know who to talk to.",distressed,train,plain
+168,"I'm exhausted, I've been studying until 4am every night.",distressed,train,plain
+169,"I'm terrified of the oral exam, I freeze every time.",distressed,train,plain
+170,"I don't think I'm cut out for university.",distressed,train,plain
+171,"I don't see the point of anything anymore.",distressed,test,implicit
+172,"lol I'm totally fine, just haven't slept in 3 days.",distressed,test,sarcasm
+173,"I'm shaking, the exam is in an hour.",distressed,test,plain
+174,"Everything is falling apart and this course is just the last straw.",distressed,test,plain
+175,"I can't do this anymore.",distressed,test,implicit
+176,"My whole future depends on passing this course and I'm freaking out.",distressed,test,plain
+177,"I've been feeling really down for weeks, not just about school.",distressed,test,plain
+178,"I feel numb, I just stare at the screen for hours.",distressed,test,implicit
+179,"I'm so anxious I threw up before class.",distressed,test,plain
+180,"Nobody would even notice if I just disappeared from this course.",distressed,test,implicit

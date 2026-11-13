@@ -1,0 +1,61 @@
+id,text,difficulty,true_label,jeff_emotion,predicted_label,confidence,abstained,correct,ms
+21,"I'll never pass this course, I'm just not a math person.",implicit,frustrated,disapproval,frustrated,0.697,True,True,493.7
+22,"Fantastic, another question I can't do.",sarcasm,frustrated,admiration,confident,0.809,True,False,305.9
+23,Again?!,short,frustrated,neutral,neutral,0.726,True,False,325.9
+24,I swear this exercise hates me.,plain,frustrated,anger,frustrated,0.488,True,True,297.5
+25,I've rewritten this paragraph in Dutch three times and it's still wrong.,plain,frustrated,disapproval,frustrated,0.682,True,True,335.7
+26,"Great, the answer key says 2 and I got 47. Love that for me.",sarcasm,frustrated,admiration,confident,0.606,True,False,332.2
+27,This question is ridiculous.,plain,frustrated,amusement,confident,0.618,True,False,290.4
+28,Why does it keep saying my conjugation is wrong when it looks right?,plain,frustrated,confusion,confused,0.468,True,False,331.3
+29,I'm getting nowhere with this and I've wasted my whole evening.,plain,frustrated,disappointment,frustrated,0.59,True,True,291.6
+30,ok forget it,short,frustrated,neutral,neutral,0.702,True,False,308.1
+51,Huh?,short,confused,neutral,neutral,0.74,True,False,286.8
+52,So... is it the same as last time or different?,plain,confused,confusion,confused,0.475,True,True,317.7
+53,I think I get it but I'm not sure why the minus sign changes.,mixed,confused,confusion,confused,0.821,True,True,301.5
+54,Why het meisje if a girl is female?,plain,confused,neutral,neutral,0.44,True,False,352.4
+55,"Wait what, where did the 2 come from?",plain,confused,curiosity,neutral,0.365,True,False,320.3
+56,Okay I understood up until the substitution part.,implicit,confused,approval,confident,0.551,True,False,317.6
+57,I keep reading the explanation but it just doesn't click.,mixed,confused,neutral,neutral,0.325,True,False,330.2
+58,Is dat or wat correct in this sentence?,plain,confused,confusion,confused,0.499,True,True,327.2
+59,So the answer is infinity? Or undefined?,plain,confused,confusion,confused,0.442,True,True,292.5
+60,not sure what you mean,short,confused,confusion,confused,0.938,False,True,275.8
+81,"whatever, next",short,bored,neutral,neutral,0.904,False,False,278.8
+82,"Oh wonderful, more vocabulary drills. Truly thrilling.",sarcasm,bored,admiration,confident,0.527,True,False,298.8
+83,Can I just get the answers so I can be done with this?,implicit,bored,curiosity,neutral,0.524,True,False,298.7
+84,Do we have to go through every single example?,plain,bored,curiosity,neutral,0.367,True,False,304.2
+85,This is easy but so tedious.,plain,bored,annoyance,frustrated,0.352,True,False,297.9
+86,"I already did 20 of these, do I really need 20 more?",plain,bored,curiosity,neutral,0.407,True,False,308.5
+87,Not really feeling this today.,implicit,bored,neutral,neutral,0.439,True,False,584.3
+88,ok...,short,bored,neutral,neutral,0.779,True,False,316.4
+89,This is the most pointless topic in the whole course.,plain,bored,annoyance,frustrated,0.469,True,False,308.9
+90,"Why do we need to learn the Dutch numbers above a hundred, nobody uses them.",plain,bored,confusion,confused,0.299,True,False,302.0
+111,Done. Next?,short,confident,neutral,neutral,0.578,True,False,274.2
+112,"Wait, I actually got it right?!",mixed,confident,curiosity,neutral,0.359,True,False,297.9
+113,Finally! After three tries I got it.,mixed,confident,relief,confident,0.284,True,True,294.6
+114,"Not bad, 9 out of 10.",plain,confident,approval,confident,0.706,True,True,293.0
+115,I used to hate derivatives but now they're fine.,mixed,confident,anger,frustrated,0.273,True,False,292.9
+116,Okay that was easier than I expected.,plain,confident,approval,confident,0.607,True,True,292.1
+117,"Pretty sure it's het huis, right?",implicit,confident,approval,confident,0.284,True,True,293.8
+118,I think I'm starting to like calculus.,plain,confident,love,confident,0.605,True,True,291.9
+119,Nailed it.,short,confident,approval,confident,0.371,True,True,275.6
+120,"I didn't think I could do it, but I did.",mixed,confident,approval,confident,0.403,True,True,292.8
+141,ok,short,neutral,neutral,neutral,0.751,True,True,273.2
+142,How do you pronounce ui?,plain,neutral,curiosity,neutral,0.479,True,True,269.9
+143,Next question please.,plain,neutral,neutral,neutral,0.967,False,True,270.2
+144,What is the integral of 1/x?,plain,neutral,neutral,neutral,0.562,True,True,290.1
+145,Can you explain the past tense?,plain,neutral,curiosity,neutral,0.499,True,True,290.2
+146,I'll do the rest later.,plain,neutral,neutral,neutral,0.565,True,True,289.9
+147,What chapter is this from?,plain,neutral,curiosity,neutral,0.395,True,True,269.3
+148,My answer is x = 4.,plain,neutral,neutral,neutral,0.895,False,True,291.0
+149,Let's practise numbers in Dutch.,plain,neutral,neutral,neutral,0.841,True,True,290.3
+150,Thanks.,short,neutral,gratitude,confident,0.998,False,False,270.1
+171,I don't see the point of anything anymore.,implicit,distressed,disapproval,frustrated,0.642,True,False,292.3
+172,"lol I'm totally fine, just haven't slept in 3 days.",sarcasm,distressed,amusement,confident,0.742,True,False,296.3
+173,"I'm shaking, the exam is in an hour.",plain,distressed,nervousness,distressed,0.58,True,True,294.9
+174,Everything is falling apart and this course is just the last straw.,plain,distressed,neutral,neutral,0.446,True,False,295.6
+175,I can't do this anymore.,implicit,distressed,disapproval,frustrated,0.532,True,False,294.1
+176,My whole future depends on passing this course and I'm freaking out.,plain,distressed,anger,frustrated,0.216,True,False,292.9
+177,"I've been feeling really down for weeks, not just about school.",plain,distressed,sadness,distressed,0.715,True,True,290.0
+178,"I feel numb, I just stare at the screen for hours.",implicit,distressed,neutral,neutral,0.596,True,False,290.4
+179,I'm so anxious I threw up before class.,plain,distressed,nervousness,distressed,0.808,True,True,289.3
+180,Nobody would even notice if I just disappeared from this course.,implicit,distressed,neutral,neutral,0.614,True,False,290.5
