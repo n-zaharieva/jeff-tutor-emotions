@@ -6,8 +6,7 @@ learned from general online comments. A tutor needs different labels, so each of
 the 28 emotions is mapped to one of six tutor labels below. The script then
 measures how often the mapped answer matches the label in tutor_emotions.csv.
 
-Run from inside the jeff folder:
-    uv run python evaluate_baseline.py
+Run from inside the jeff folder: uv run python evaluate_baseline.py
 
 Output:
     - a summary in the terminal
@@ -25,9 +24,6 @@ RESULTS_FILE = "results_baseline.csv"
 SPLIT = "test"  # evaluate on the held-out messages only
 
 # Mapping from the adapter's 28 labels to the six tutor labels.
-# There is no "bored" emotion among the 28, so the baseline can never predict
-# "bored". That is a limitation of the ready-made adapter, and one reason to
-# train a tutor-specific adapter.
 EMOTION_TO_TUTOR = {
     # frustrated
     "anger": "frustrated", "annoyance": "frustrated", "disappointment": "frustrated",
@@ -82,13 +78,11 @@ def main():
             "ms": round(ms, 1),
         })
 
-    # Save every prediction so you can quote examples in your report.
     with open(RESULTS_FILE, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=results[0].keys())
         writer.writeheader()
         writer.writerows(results)
 
-    # Summary
     n = len(results)
     correct = sum(r["correct"] for r in results)
     print(f"Overall accuracy: {correct}/{n} = {correct / n:.0%}")
