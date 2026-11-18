@@ -88,18 +88,21 @@ All experiments are scored on the **same 60 test messages**.
 
 | # | Script | Approach | Training? |
 |---|---|---|---|
-| 1 | `evaluate_baseline.py` | Jeff's ready-made **emotion adapter** (27 emotions plus neutral, trained on Reddit comments). Its emotions are mapped onto the six tutor labels (for example annoyance to frustrated, fear to distressed) | No |
-| 2 | `evaluate_described_labels.py` | Jeff's **triage adapter**, which normally routes support emails to teams. The six tutor labels are given as "teams", each with a one-line description (prompt engineering) | No |
-| 3a | `train_tutor_adapter.py` (before) | Jeff's **base model** with a prompt listing the labels as options A to F; the answer is read from the probabilities of those letters | No |
-| 3b | `train_tutor_adapter.py` (after) | The same, after **fine-tuning a LoRA adapter** on the 120 training messages | Yes |
+| 1 | `evaluate_baseline.py` | Jeff's ready-made emotion adapter (27 emotions plus neutral, trained on Reddit comments). Its emotions are mapped onto the six tutor labels (for example annoyance to frustrated, fear to distressed) | No |
+| 2 | `evaluate_described_labels.py` | Jeff's triage adapter, which normally routes support emails to teams. The six tutor labels are given as "teams", each with a one-line description (prompt engineering) | No |
+| 3a | `train_tutor_adapter.py` (before) | Jeff's base model with a prompt listing the labels as options A to F; the answer is read from the probabilities of those letters | No |
+| 3b | `train_tutor_adapter.py` (after) | The same, after fine-tuning a LoRA adapter on the 120 training messages | Yes |
 
-**Fine-tuning details (3b).** Jeff's own trainer is not published, so I used standard LoRA from Hugging Face
+
+**Fine-tuning details (3b)**
+Jeff's own trainer is not published, so I used standard LoRA from Hugging Face
 PEFT, keeping Jeff's core idea: the loss is a cross-entropy over the six option letters at the last position of
-the prompt. Settings: LoRA rank 16 (the same rank as Jeff's own adapters), alpha 32, dropout 0.05, learning
+the prompt. 
+Settings: LoRA rank 16 (the same rank as Jeff's own adapters), alpha 32, dropout 0.05, learning
 rate 2e-4, 3 epochs, one message per step with 4 accumulated steps per update, seed 42. LoRA was applied only
-to the **top 8 of the 24 text layers** (16 to 23); training all layers ran out of memory and took over
+to the top 8 of the 24 text layers (16 to 23). Training all layers ran out of memory and took over
 15 seconds per message on a laptop, while this setup took about 1 second per message (about 8 minutes in
-total) on an Apple silicon Mac. About 3.4 million weights (0.4% of the model) were trained.
+total).
 
 ## 5. Results
 
@@ -126,9 +129,9 @@ in 3b, 0.86 when right and 0.76 when wrong.
 
 1. **Fine-tuning helped most:** 57% to 72% with only 120 examples and minutes of laptop training.
 2. **Labels matter:** the ready-made emotion adapter has no "bored" emotion and could never detect it.
-3. **Sarcasm and hidden feelings are the weak spots** of every version.
-4. **Safety trade-off:** fine-tuning raised overall accuracy but **lowered** recognition of distressed students
-   (7/10 to 5/10); three distressed students were labelled "frustrated" and would have been encouraged instead
+3. **Sarcasm and hidden feelings are the weak spots of every version.**
+4. **Safety trade-off:** fine-tuning raised overall accuracy but lowered recognition of distressed students
+   (7/10 to 5/10). Three distressed students were labelled "frustrated" and would have been encouraged instead
    of being referred to a person.
 5. **Confidence does not transfer:** adapters calibrated on other tasks (emails, Reddit comments) were either
    almost never sure or almost always sure on tutoring messages, and even the fine-tuned model was quite
@@ -195,13 +198,13 @@ The first run of each script downloads the model and adapters from Hugging Face 
 
 **Limitations**
 
-- **Small test set:** 60 messages, so one message is about 1.7 percentage points; differences of one or two
+- Small test set: 60 messages, so one message is about 1.7 percentage points; differences of one or two
   messages per label may be chance.
-- **One training run** with one random seed.
-- **AI-assisted, not real, data;** real students write differently (typos, other languages, longer context).
-- **Text only and one message at a time:** the model does not see the conversation history.
-- **English only;** the Dutch tutor's students may write in Dutch.
-- **The label mapping in experiment 1** was my own choice; another mapping would change its results.
+- One training run with one random seed.
+- AI-assisted, not real, data; real students write differently (typos, other languages, longer context).
+- Text only and one message at a time: the model does not see the conversation history.
+- English only: the Dutch tutor's students may write in Dutch.
+- The label mapping in experiment 1 was my own choice; another mapping would change its results.
 
 ### Human-AI teaming
 
@@ -214,20 +217,10 @@ students to reach a person directly.
 
 ### Ethics
 
-- **Privacy and surveillance:** reading students' emotions from their messages is sensitive; students should
-  know it happens and be able to opt out. Running Jeff locally helps, since messages need not be sent elsewhere.
-- **Missed distress:** a false "frustrated" for a distressed student can delay real help.
-- **False confidence:** a precise-looking probability can make a wrong decision look trustworthy.
-- **Bias:** the training messages were written in one style; students who express themselves differently
+- Privacy and surveillance: reading students' emotions from their messages is sensitive. Students should
+  know it happens and be able to opt out. Running Jeff locally helps, since messages don't need to be sent elsewhere.
+- Missed distress: a false "frustrated" for a distressed student can delay real help.
+- False confidence: a precise-looking probability can make a wrong decision look trustworthy.
+- Bias: the training messages were written in one style. Students who express themselves differently
   (non-native speakers, other cultures, neurodivergent students) may be misread more often.
-- **AI-generated data:** the dataset was written with AI assistance, which may not reflect how real students talk.
-
-## 9. Credits and licences
-
-- **Jeff** by Mathias Strasser and contributors: code MIT, model weights Apache 2.0
-  ([github.com/firelex/jeff](https://github.com/firelex/jeff), [jeffhub.ai](https://jeffhub.ai)).
-  Not affiliated with this project.
-- The emotion and triage adapters are Jeff's open adapters; see their pages on jeffhub.ai for their data and
-  licences.
-- The scripts and data in this repository were written with the help of an AI assistant (Claude) and checked by
-  the author.
+- AI-generated data: the dataset was written with AI assistance, which may not reflect how real students talk.
