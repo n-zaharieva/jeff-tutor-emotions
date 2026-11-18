@@ -46,12 +46,19 @@ feels, which is the affective computing side of the project.
 
 ## 2. Application and design
 
-| Design question | Choice | Why |
-|---|---|---|
-| Embodied or not? | **Not embodied.** An invisible layer inside a text chatbot | It works behind any tutor; no avatar is needed to read emotions from text |
-| Modalities | **Text only** (the student's typed message) | Jeff reads English text only. Tone of voice and facial expressions are not available, which is a limitation |
-| Intended users | **University students** using an AI tutor (calculus, Dutch), and indirectly **teachers or counsellors** who receive escalated cases | |
+**Embodiment.** The agent is not embodied. It is an invisible layer inside a text chatbot: before the tutor
+replies, Jeff reads the student's message and decides how the student is doing. No avatar or robot is needed to
+read emotions from text, and because the layer has no face of its own, it can sit behind any tutor, such as
+the calculus and Dutch tutors of my group members.
 
+**Modality.** The only input is text: the message the student types. This matches how students already use a
+tutor chatbot, so nothing extra is asked of them. It is also a limitation: Jeff reads English text only, so tone
+of voice, facial expressions and typing behaviour, which could reveal frustration or distress, are not available.
+
+**Intended users.** The direct users are university students who use an AI tutor for calculus or Dutch. They do
+not see Jeff, only a tutor that adapts to them. Teachers and student counsellors are indirect users: they receive
+the cases Jeff flags, such as a possibly distressed student, because these decisions should not be left to the
+model alone.
 The six labels and what the tutor does with each:
 
 | Label | Tutor's response |
