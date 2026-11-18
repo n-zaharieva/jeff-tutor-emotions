@@ -26,22 +26,22 @@ reply, it returns one choice from a list of options together with a probability.
 ## 1. What Jeff is and why I chose it
 
 [Jeff](https://github.com/firelex/jeff) is an open-source "System 1" model of about 0.8 billion parameters,
-fine-tuned from Qwen3.5-0.8B. You describe a situation and a list of options in plain words; Jeff returns a
+fine-tuned from Qwen3.5-0.8B. You describe a situation and a list of options in plain words, Jeff returns a
 probability for each option in a single forward pass, with no generated text. Small add-ons called
-**adapters** (LoRA weights) specialise it for one task each.
+adapters (LoRA weights) specialise it for one task each.
 
 Why Jeff for this application:
 
-- **Speed.** An emotion check has to run on every message before the tutor replies. Jeff answers in about
+- **Speed** - an emotion check has to run on every message before the tutor replies. Jeff answers in about
   0.15 to 0.4 seconds on a laptop.
-- **A decision, not a paragraph.** The tutor's code needs one label ("distressed"), not text to parse.
-- **A probability with every answer.** This allows a simple rule: act when the model is sure, ask a human when
-  it is not (see [human-AI teaming](#human-ai-teaming)).
-- **Open source and local.** Code under MIT, weights under Apache 2.0. It runs on a laptop, so student
+- **A decision, not a paragraph** - the tutor's code needs one label ("distressed"), not text to parse.
+- **A probability with every answer** - this allows a simple rule: act when the model is sure, ask a human when
+  it is not
+- **Open source and local** - code under MIT, weights under Apache 2.0. It runs on a laptop, so student
   messages never leave the device.
-- **New.** Jeff was released in autumn 2026, so testing it in an educational, affective setting is new ground.
+- **New** - Jeff was released in autumn 2026, so testing it in an educational, affective setting is new ground.
 
-The contrast with my group members' work: their tutors *generate* explanations; Jeff *decides* how the student
+The contrast with my group members' work: their tutors generate explanations, Jeff decides how the student
 feels, which is the affective computing side of the project.
 
 ## 2. Application and design
