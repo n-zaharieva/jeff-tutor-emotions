@@ -73,13 +73,13 @@ The six labels and what the tutor does with each:
 
 ## 3. Data
 
-`tutor_emotions.csv` contains **180 short student messages** about calculus and Dutch, 30 per label.
+`tutor_emotions.csv` contains 180 short student messages about calculus and Dutch, 30 per label.
 
-- **120 training messages** (20 per label) and **60 test messages** (10 per label). The test messages are never
+- 120 training messages (20 per label) and 60 test messages (10 per label). The test messages are never
   used for training.
 - The test set deliberately includes hard cases, marked in the `difficulty` column: `sarcasm`, `short`
   ("Huh?", "ok..."), `implicit` (feelings not stated directly), `mixed` (two feelings at once) and `plain`.
-- The messages were **written with the help of an AI assistant** and checked and labelled by me. They are not
+- The messages were written with the help of an AI assistant and checked and labelled by me. They are not
   real student data.
 
 ## 4. Experiments
