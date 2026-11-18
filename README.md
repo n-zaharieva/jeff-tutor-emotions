@@ -1,10 +1,6 @@
 # Reading student emotions with Jeff: an emotion-aware layer for AI tutors
 
-Individual part of a group project for the course **Core Topics AI** (Tilburg University, 2026).
-Author: *Nikol Zaharieva*
-
-Our group builds AI tutors for university students (calculus and Dutch). This repository contains my
-individual contribution: an **emotion-reading layer** that sits in front of a tutor. For every student message
+ This repository is about an emotion-reading layer that sits in front of a tutor. For every student message
 it decides, in a fraction of a second, how the student is doing, so the tutor can adapt its response or hand
 the student over to a person.
 
