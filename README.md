@@ -19,7 +19,6 @@ reply, it returns one choice from a list of options together with a probability.
 6. [How to run it](#6-how-to-run-it)
 7. [Files](#7-files)
 8. [Limitations and ethics](#8-limitations-and-ethics)
-9. [Credits and licences](#9-credits-and-licences)
 
 ---
 
