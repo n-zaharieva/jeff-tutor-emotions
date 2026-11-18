@@ -4,12 +4,11 @@ Experiment 2: Jeff with the tutor's own labels, described in words (no training)
 Jeff's triage adapter routes a message to one of the caller's own "teams", reading
 a one-line description of each. Here the "teams" are the six tutor responses, and
 each description says which student state it is for. The model is not trained on
-tutor data; only the wording of the labels changes. This tests whether describing
+tutor data, only the wording of the labels changes. This tests whether describing
 the labels well is enough, compared with the ready-made emotion adapter
 (evaluate_baseline.py).
 
-Run from inside the jeff folder:
-    uv run python evaluate_described_labels.py
+Run from inside the jeff folder: uv run python evaluate_described_labels.py
 
 Output:
     - a summary in the terminal
@@ -27,8 +26,7 @@ RESULTS_FILE = "results_described_labels.csv"
 SPLIT = "test"  # the same 60 held-out messages as the baseline
 
 # The label keys match the labels in tutor_emotions.csv, so no mapping is needed.
-# Each description names both the student's state and what the tutor should do,
-# because the triage adapter was trained to pick who should handle a message.
+# Each description names both the student's state and what the tutor should do, because the triage adapter was trained to pick who should handle a message.
 TUTOR_LABELS = {
     "frustrated": "Encouragement: the student is frustrated, annoyed or angry about getting things wrong, "
                   "or criticises themselves",
