@@ -14,8 +14,7 @@ Steps:
   4. Evaluate again on the same 60 test messages (after training).
   5. Save the adapter to tutor_adapter/ and every prediction to results_finetuned.csv.
 
-Run from inside the jeff folder (Apple silicon uses the GPU through "mps"):
-    uv run --with peft --with transformers --with accelerate python train_tutor_adapter.py
+Run from inside the jeff folder (Apple silicon uses the GPU through "mps"): uv run --with peft --with transformers --with accelerate python train_tutor_adapter.py
 """
 
 import csv
@@ -28,9 +27,7 @@ import torch.nn.functional as F
 from peft import LoraConfig, get_peft_model
 from transformers import AutoModelForImageTextToText, AutoTokenizer
 
-# ---------------------------------------------------------------------------
-# Settings
-# ---------------------------------------------------------------------------
+
 BASE_MODEL = "mstrasser/jeff-base"   # Jeff's base model on Hugging Face
 BASE_REVISION = "v1.4"               # the base version your Jeff install uses
 
@@ -44,9 +41,7 @@ LEARNING_RATE = 2e-4
 LORA_RANK = 16          # the same rank Jeff's own adapters use
 SEED = 42
 
-# LoRA is added only to the top 8 of the text model's 24 layers (16-23), not to the
-# image part. The lower layers then need no gradients, which saves a lot of memory
-# and time on a laptop; the top layers are closest to the answer.
+# LoRA is added only to the top 8 of the text model's 24 layers (16-23), not to the image part.
 LORA_TARGETS = (r".*language_model\.layers\.(1[6-9]|2[0-3])\..*\.(q_proj|k_proj|v_proj|o_proj"
                 r"|gate_proj|up_proj|down_proj|in_proj_qkv|in_proj_z|out_proj)")
 
@@ -62,9 +57,7 @@ LABELS = {
 LABEL_NAMES = list(LABELS)
 LETTERS = ["A", "B", "C", "D", "E", "F"]
 
-# ---------------------------------------------------------------------------
 # Setup
-# ---------------------------------------------------------------------------
 random.seed(SEED)
 torch.manual_seed(SEED)
 DEVICE = "mps" if torch.backends.mps.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
@@ -194,8 +187,7 @@ def main():
     optimizer = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad], lr=LEARNING_RATE)
     targets = {name: i for i, name in enumerate(LABEL_NAMES)}
 
-    # Train: the loss compares the six letter scores with the correct letter,
-    # like Jeff's readout over the option letters.
+    # Train: the loss compares the six letter scores with the correct letter, like Jeff's readout over the option letters.
     total_steps = EPOCHS * len(train_rows)
     train_start = time.perf_counter()
     for epoch in range(1, EPOCHS + 1):
